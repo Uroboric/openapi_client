@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "dm_api_account"
+version = "1.0.0"
+description = "DM.API Account"
+authors = ["OpenAPI Generator Community <team@openapitools.org>"]
+readme = "README.md"
+keywords = ["OpenAPI", "OpenAPI-Generator", "DM.API Account"]
+packages = [{include = "dm_api_account"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+urllib3 = ">=2.1.0,<3.0.0"
+python-dateutil = ">=2.8.2"
+aiohttp = ">=3.8.4"
+aiohttp-retry = ">=2.8.3"
+pydantic = ">=2"
+typing-extensions = ">=4.7.1"
+asyncio = ">=3.4.3,<4.0.0"
+structlog = ">=25.4.0,<26.0.0"
+curlify2 = ">=2.0.0,<3.0.0"
+allure-pytest = ">=2.14.2,<3.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=7.2.1"
+pytest-cov = ">=2.8.1"
+tox = ">=3.9.0"
+flake8 = ">=4.0.0"
+types-python-dateutil = ">=2.8.19.14"
+mypy = ">=1.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
